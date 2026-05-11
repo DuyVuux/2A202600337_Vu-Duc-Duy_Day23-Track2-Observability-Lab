@@ -148,7 +148,7 @@ Mục tiêu: stack chạy được trên 1 kind cluster, 1 Deployment + 1 Servic
 - Tạo namespace `monitoring`.
 - Viết manifest cho từng service (vibe-code ok, nhưng `kubectl explain` từng field bạn không hiểu).
 - Verify từng service healthy: `kubectl get pods -n monitoring`.
-- Port-forward Grafana: `kubectl port-forward -n monitoring svc/grafana 3000:3000`.
+- Port-forward Grafana: `kubectl port-forward -n monitoring svc/grafana 3005:3000`.
 - Xác minh trace + metric + log của app vẫn flow end-to-end (giống Compose).
 
 **Câu hỏi để brainstorm:**

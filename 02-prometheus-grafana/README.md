@@ -25,7 +25,7 @@ load-test/
 
 ## What students do
 
-1. Open <http://localhost:3000> (admin/admin) — confirm 3 dashboards loaded
+1. Open <http://localhost:3005> (admin/admin) — confirm 3 dashboards loaded
 2. `make load` — run Locust at 10 concurrent users for 60s
 3. Watch RPS panel rise, P99 stay below 500ms
 4. `make alert` — kill the app container; watch:

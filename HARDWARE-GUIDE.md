@@ -79,4 +79,4 @@ We considered a "Lite" path (no Docker), but observability is fundamentally a mu
 | `make alert` doesn't fire            | Alert needs ~90s of failure dwell     | Be patient (or shorten `for: 1m` in alert rules for the demo) |
 | Slack receives nothing               | Webhook URL invalid                   | `curl -X POST $SLACK_WEBHOOK_URL -d '{"text":"test"}'` |
 | Out of memory                        | Docker Desktop limit too low          | Settings → Resources → Memory ≥ 6 GB |
-| Port already bound                   | Another process holds 3000/9090/etc.  | `lsof -i :3000` to find offender |
+| Port already bound                   | Another process holds 3005/9090/etc.  | `lsof -i :3005` to find offender |
